@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Навигация</title>
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+    <div class="container">
+
+    </div>
+</header>
+		<main class="main">
+			<div class="navigation">
+				<div class="container">
+					<div class="navigation__inner">
+						<ul class="navigation__list">
+							<li><a href="product-item.html">Подробная о серии</a></li>
+							<li>
+								<button class="btn btn-primary" data-modal="contactModal">
+									<span>Позвонить Вам?</span>
+								</button>
+							</li>
+							<li>
+								<button class="btn btn-primary" data-modal="contactModal2">
+									<span>Рассчитать стоимость</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+
+	</div>
+
+	<div class="modal" id="contactModal">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/close.svg" alt="">
+			</button>
+			<div class="modal__content">
+				<div class="modal__title text21">Позвонить Вам?</div>
+				<form class="modal__form">
+					<div class="cabinet-form__group">
+						<label>Ваше имя</label>
+						<input type="text" placeholder="Ваше имя">
+					</div>
+					<div class="cabinet-form__group">
+						<label>
+							<span>*</span>
+							Телефон
+						</label>
+						<input type="tel" placeholder="+7 (___) ___-__-__">
+					</div>
+					<button class="cabinet-form__btn btn btn-primary">
+						<span>Отправить</span>
+					</button>
+					<div class="cabinet-form__check">
+						Отправляя форму вы соглашаетесь на обработку <a href="">персональных данных.</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="contactModal2">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/close.svg" alt="">
+			</button>
+			<div class="modal__content">
+				<div class="modal__title text21">Рассчитать стоимость</div>
+				<form class="modal__form">
+					<div class="cabinet-form__group">
+						<label>Ваше имя</label>
+						<input type="text" placeholder="Ваше имя">
+					</div>
+					<div class="cabinet-form__group">
+						<label>
+							<span>*</span>
+							Телефон
+						</label>
+						<input type="tel" placeholder="+7 (___) ___-__-__">
+					</div>
+					<div class="cabinet-form__group">
+						<label>Email</label>
+						<textarea placeholder="Комменатарий"></textarea>
+					</div>
+					<button class="cabinet-form__btn btn btn-primary">
+						<span>Отправить</span>
+					</button>
+					<div class="cabinet-form__check">
+						Отправляя форму вы соглашаетесь на обработку <a href="">персональных данных.</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+<style>
+	.navigation {
+		padding: 50px 0;
+	}
+	.navigation .navigation__list {
+		display: grid;
+		grid-template-columns: 100%;
+		gap: 24px;
+	}
+	.navigation .navigation__list li a {
+		font-size: 24px;
+		line-height: 120%;
+	}
+	.navigation .navigation__list li a:hover {
+		color: #F07A34;
+	}
+	.navigation .navigation__list li .btn-primary {
+		padding: 16px 32px;
+		font-size: 18px;
+	}
+</style>
+
+</html>
